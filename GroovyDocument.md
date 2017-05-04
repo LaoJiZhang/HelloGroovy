@@ -150,7 +150,7 @@ closure.call(params)
 
 
 ## 实战分析
-* 美团V2方式打包实践
+* [美团V2方式打包实践](https://github.com/guomaojian1992/MeiTuanMultiChannelDemo)
 * [抓取豌豆荚Apk反编译](https://github.com/guomaojian1992/DecompileApkGroovy)
 
 
@@ -159,3 +159,5 @@ closure.call(params)
 * [为什么用 Groovy ？](https://dongchuan.gitbooks.io/gradle-user-guide-/overview/why_groovy.html)
 * [The Apache Groovy programming language - Download](http://groovy-lang.org/download.html)
 * [Apache Groovy build tools Versions](http://repo1.maven.org/maven2/org/codehaus/groovy/)
+* [新一代开源Android渠道包生成工具Walle](http://tech.meituan.com/android-apk-v2-signature-scheme.html)
+* [walle-cli](https://github.com/Meituan-Dianping/walle/blob/master/walle-cli/README.md)

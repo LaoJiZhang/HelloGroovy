@@ -5,7 +5,7 @@ import groovy.io.FileType
 class FileLearning {
 
     File mFile = new File(new File("").getAbsolutePath())
-    File mDocFile = new File(new File("").getAbsolutePath() + File.separator + "Groovy演讲稿.md")
+    File mDocFile = new File(new File("").getAbsolutePath() + File.separator + "GroovyDocument.md")
 
     def printFileContent() {
         mDocFile.eachLine {
