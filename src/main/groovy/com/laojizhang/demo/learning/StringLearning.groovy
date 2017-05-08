@@ -10,6 +10,7 @@ class StringLearning {
         PrintUtils.printCutLine()
         stringLearning.checkNullString("2222223")
         stringLearning.checkNullString()
+        stringLearning.checkNullString(null)
 
         PrintUtils.printCutLine()
         stringLearning.multiValue()
@@ -26,6 +27,7 @@ class StringLearning {
         }
 
         //Groovy 执行系统命令
+//        *********************.getText(Process self)
         println order.execute().text
     }
 
@@ -49,6 +51,5 @@ class StringLearning {
 
         def (one, two, three) = ["one", "two"]
         println one + " " + two + "  " + three
-
     }
 }

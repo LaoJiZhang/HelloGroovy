@@ -22,10 +22,14 @@ class BaseLearning {
         //简单定义 后面会有更详细说明
         //引用标识符
         def map = [:]
+        map.put('flag', 'flag')
         map.'flagA' = 'flagA'
         map."flagB" = "flagB"
+        map['flagC'] = 'flagC'
 
         //{}内可放置定义中包含有$符号的变量
+        map["$name"] = "$name"
+//        map["$name_type"] = "$name_type"
         map."${name}_type1" = "flag_${name}_1"
         map."${$name}_type2" = "flag_${$name}_2"
 

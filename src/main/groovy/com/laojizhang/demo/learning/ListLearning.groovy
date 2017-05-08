@@ -1,7 +1,7 @@
 package com.laojizhang.demo.learning
 
 class ListLearning {
-    def lst = ["a", "b", "c", "d", "e", "f", "g"]
+    def lst = ["a", "b", "c", "d", "e", "c", "f", "g"]
 
     static void main(String[] args) {
         PrintUtils.printCutLine("listLearning")
@@ -30,7 +30,7 @@ class ListLearning {
     }
 
     def iteratorListWithIndex() {
-        //list遍历
+        //list遍历，注意，闭包的第一个参数是value 第二个参数才是index
         lst.eachWithIndex { value, index ->
             println "index:" + index + "   value:" + value
         }
@@ -38,10 +38,12 @@ class ListLearning {
 
     def findList() {
         //lst find 查找一个; findAll 查找集合中符合闭包中条件的所有值 的新集合
+        //返回值是某元素
         println "find 'c' :" + lst.find({
             it.equals("c")
         })
 
+        //返回值是新集合
         println "findAll > 'c' :" + lst.findAll {
             it > "c"
         }

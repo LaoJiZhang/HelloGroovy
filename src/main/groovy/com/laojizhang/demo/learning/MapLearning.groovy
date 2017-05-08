@@ -21,6 +21,7 @@ class MapLearning {
     }
 
     def printMapWithEntry() {
+        //HashMap.EntrySet
         country.each { entry ->
             println "entry key=" + entry.getKey() + "   entry value=" + entry.getValue()
         }

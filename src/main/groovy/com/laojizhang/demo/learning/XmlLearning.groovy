@@ -11,10 +11,8 @@ class XmlLearning {
 
     static void main(String[] args) {
         PrintUtils.printCutLine("XmlLearning")
-        def filePath = new File("").getAbsolutePath() + File.separator + "src" + File.separator + "main" + File.separator + "AndroidManifest.xml";
+        def filePath = new File(".").getAbsolutePath() + File.separator + "src" + File.separator + "main" + File.separator + "AndroidManifest.xml";
         XmlLearning xmlLearning = new XmlLearning()
-
-        PrintUtils.printCutLine()
         xmlLearning.xmlSlurper(filePath)
 
         PrintUtils.printCutLine()
