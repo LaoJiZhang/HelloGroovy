@@ -4,111 +4,35 @@ import com.laojizhang.demo.learning.*
 
 class Demo {
 
+//    BaseLearning 字符串定义 单引号 双引号 三重单引号
+//    StringLearning 运行CMD指令 非空检查 多赋值
+//    ClassLearning 类定义
+//
+//    ListLearning List定义 使用及简单api方法
+//    MapLearning  Map定义  使用及简单api方法
+//    EachLearning List/Map 遍历
+//
+//    ClosureLearning 闭包相关使用
+//
+//    FileLearning 文件操作
+//    XmlLearning Xml操作
+//    JsonLearning Json相关操作
+
     static void main(String[] args) {
         println("laojizhang")
-        testBaseLearning()
-        testStringLearning()
-        testClosureLearning()
-        testEachLearning()
-        testClassLearning()
-        testListLearning()
-        testMapLearning()
-        testFileLearning()
-        testXmlLearning()
-        testJsonLearning()
-    }
+        BaseLearning.main(args)
+        StringLearning.main(args)
 
-    static void testBaseLearning() {
-        PrintUtils.printCutLine("baseLearning")
-        BaseLearning baseLearning = new BaseLearning()
-        baseLearning.base()
-    }
+        ClassLearning.main(args)
 
-    static void testClosureLearning() {
-        PrintUtils.printCutLine("closureLearning")
-        ClosureLearning closureLearning = new ClosureLearning()
-        closureLearning.printClosure()
-        PrintUtils.printCutLine()
-        closureLearning.getClosureValue()
-        PrintUtils.printCutLine()
-        closureLearning.passClosure()
-        PrintUtils.printCutLine()
-        closureLearning.passMultiClosure()
-    }
+        ListLearning.main(args)
+        MapLearning.main(args)
+        EachLearning.main(args)
 
-    static void testEachLearning() {
-        PrintUtils.printCutLine("eachLearning")
-        EachLearning eachLearning = new EachLearning()
-        eachLearning.printForData()
-    }
+        ClosureLearning.main(args)
 
-    static void testClassLearning() {
-        PrintUtils.printCutLine("classLearning")
-        ClassLearning person = new ClassLearning(name: "老机长", age: 18)
-
-        println person.toString()
-    }
-
-    static void testListLearning() {
-        PrintUtils.printCutLine("listLearning")
-        ListLearning learning = new ListLearning()
-        learning.printList()
-        PrintUtils.printCutLine()
-
-        learning.iteratorListWithIndex()
-        PrintUtils.printCutLine()
-
-        learning.findList()
-        PrintUtils.printCutLine()
-
-        learning.makeNewList()
-
-    }
-
-    static void testMapLearning() {
-        PrintUtils.printCutLine("mapLearning")
-        MapLearning mapLearning = new MapLearning()
-        mapLearning.printMap()
-        PrintUtils.printCutLine()
-        mapLearning.printMapWithEntry()
-    }
-
-    static void testStringLearning() {
-        PrintUtils.printCutLine("stringLearning")
-        StringLearning stringLearning = new StringLearning()
-        stringLearning.runCMD()
-        PrintUtils.printCutLine()
-        stringLearning.checkNullString("2222223")
-        stringLearning.checkNullString()
-        PrintUtils.printCutLine()
-        stringLearning.multiValue()
-    }
-
-    static void testFileLearning() {
-        PrintUtils.printCutLine("FileLearning")
-        com.laojizhang.demo.FileLearning fileLearning = new com.laojizhang.demo.FileLearning()
-        fileLearning.printFileContent()
-        PrintUtils.printCutLine()
-        fileLearning.printEachFile()
-        PrintUtils.printCutLine()
-        fileLearning.printEachFileMatcher()
-    }
-
-    static void testXmlLearning() {
-        PrintUtils.printCutLine("XmlLearning")
-        def filePath = new File("").getAbsolutePath() + File.separator + "src" + File.separator + "main" + File.separator + "AndroidManifest.xml";
-        XmlLearning xmlLearning = new XmlLearning()
-        PrintUtils.printCutLine()
-        xmlLearning.xmlSlurper(filePath)
-        PrintUtils.printCutLine()
-        xmlLearning.xmlParser(filePath)
-    }
-
-    static void testJsonLearning() {
-        PrintUtils.printCutLine("JsonLearning")
-        JsonLearning jsonLearning = new JsonLearning()
-        jsonLearning.jsonSlurperTest()
-        PrintUtils.printCutLine()
-        jsonLearning.jsonOutputTest()
+        FileLearning.main(args)
+        XmlLearning.main(args)
+        JsonLearning.main(args)
     }
 }

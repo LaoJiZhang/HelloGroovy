@@ -3,8 +3,8 @@
 
 * author: 老机长
 * time: 2017/04/27
-* update: 2017/05/03
-* version: 1.2.0
+* update: 2017/05/07
+* version: 1.3.0
 
 ## 什么是Groovy
 * Groovy是Java平台上设计的面向对象编程语言
@@ -12,7 +12,7 @@
 * Groovy代码动态地被编译器转换成Java字节码。由于其运行在JVM上的特性，Groovy可以使用其他Java语言编写的库
 * Groovy拥有类似Python、Ruby和Smalltalk中的一些特性，可以作为Java平台的脚本语言使用
 
-## 为什么要用Groovy
+## 为什么要用Groovy ？ 脚本语言有哪些 ？ 而不用Python Ruby 等脚本语言呢 ？
 * 答案在于 Gradle 的运行环境. 虽然 Gradle 以一个通用构建工具为核心, 但是它的重点是Java项目. 在这样的项目中, 显然团队每个成员都对 Java 非常熟悉. 我们认为构建应尽可能对所有团队成员都是透明的, 所以选择了 Groovy.
 
 * 你可能会说，为什么不直接使用 Java 作为构建脚本的语言. 我们认为这是一个很有用的问题. 对于你的团队, 它要有最高的透明度和最低的学习曲线, 也就是说容易掌握. 但由于 Java 的限制, 这样的构建语言不会那么完美和强大. 而像 Python，Groovy 或 Ruby 语言用来作为构建语言会更好. 我们选择了 Groovy 是因为它给 Java 开发人员提供了迄今为止最大的透明度. 其基本的符号和类型与 Java 是一样的，其封装结构和许多其他的地方也是如此. Groovy 在这基础上提供了更多的功能, 而且与 java 有共同的基础.
@@ -86,6 +86,7 @@
 
 
 * Groovy遍历初探
+
 >参考 EachLearning.groovy
 
 * Process 操作
@@ -95,17 +96,21 @@
 * 安全操作符,三目运算符(双目运算符)
     * person ?. name
     * preson ?: "defaultName"
+
 >参考 StringLearning.groovy.checkNullString()
 
 * 灵活初始化
+
 >参考 Demo.groovy.testClassLearning()
 
 * 多赋值()
+
 >参考 StringLearning.groovy.multiValue()
 
 * 布尔型求值
 
 * list 及 map集合
+
 >参考 ListLearning.groovy
 
 >参考 MapLearning.groovy
@@ -113,6 +118,7 @@
 >参考 EachLearning.groovy
 
 * 闭包
+
 ```
 是groovy.lang.Closure 的实例，像一段代码块或者方法指针
 
@@ -142,12 +148,15 @@ closure.call(params)
 >参考 ：ClosureLearning.groovy
 
 * File文件操作
+
 >参考 FileLearning.groovy
 
 * Json
+
 >参考 JsonLearning.groovy
 
 * XML
+
 >参考 XmlLearning.groovy
 
 

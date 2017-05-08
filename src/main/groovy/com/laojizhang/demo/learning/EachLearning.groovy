@@ -2,6 +2,12 @@ package com.laojizhang.demo.learning
 
 class EachLearning {
 
+    static void main(String[] args) {
+        PrintUtils.printCutLine("eachLearning")
+        EachLearning eachLearning = new EachLearning()
+        eachLearning.printForData()
+    }
+
     def printForData() {
         for (int i = 0; i < 3; i++) {
             println "Java each i=" + i

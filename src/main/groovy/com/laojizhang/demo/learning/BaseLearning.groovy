@@ -2,6 +2,12 @@ package com.laojizhang.demo.learning
 
 class BaseLearning {
 
+    static void main(String[] args) {
+        PrintUtils.printCutLine("baseLearning")
+        BaseLearning baseLearning = new BaseLearning()
+        baseLearning.base()
+    }
+
     def base() {
         //普通标识符
         //语法与C语言类似，只能以字母、美元符号$、下划线开头等；不能以数字开头

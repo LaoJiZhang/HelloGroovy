@@ -1,4 +1,4 @@
-package com.laojizhang.demo
+package com.laojizhang.demo.learning
 
 import groovy.io.FileType
 
@@ -6,6 +6,18 @@ class FileLearning {
 
     File mFile = new File(new File("").getAbsolutePath())
     File mDocFile = new File(new File("").getAbsolutePath() + File.separator + "README.md")
+
+    static void main(String[] args) {
+        PrintUtils.printCutLine("FileLearning")
+        FileLearning fileLearning = new FileLearning()
+        fileLearning.printFileContent()
+
+        PrintUtils.printCutLine()
+        fileLearning.printEachFile()
+
+        PrintUtils.printCutLine()
+        fileLearning.printEachFileMatcher()
+    }
 
     def printFileContent() {
         mDocFile.eachLine {

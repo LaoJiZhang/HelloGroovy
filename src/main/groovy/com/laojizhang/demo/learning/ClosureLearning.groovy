@@ -2,6 +2,21 @@ package com.laojizhang.demo.learning
 
 class ClosureLearning {
 
+    static void main(String[] args) {
+        PrintUtils.printCutLine("closureLearning")
+        ClosureLearning closureLearning = new ClosureLearning()
+        closureLearning.printClosure()
+
+        PrintUtils.printCutLine()
+        closureLearning.getClosureValue()
+
+        PrintUtils.printCutLine()
+        closureLearning.passClosure()
+
+        PrintUtils.printCutLine()
+        closureLearning.passMultiClosure()
+    }
+
     def printClosure() {
 
         //闭包定义及调用方式

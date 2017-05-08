@@ -2,6 +2,19 @@ package com.laojizhang.demo.learning
 
 class StringLearning {
 
+    static void main(String[] args) {
+        PrintUtils.printCutLine("stringLearning")
+        StringLearning stringLearning = new StringLearning()
+        stringLearning.runCMD()
+
+        PrintUtils.printCutLine()
+        stringLearning.checkNullString("2222223")
+        stringLearning.checkNullString()
+
+        PrintUtils.printCutLine()
+        stringLearning.multiValue()
+    }
+
     def runCMD() {
         def order = "groovy -v"
         //Java 执行系统命令

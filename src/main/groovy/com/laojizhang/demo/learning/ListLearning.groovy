@@ -3,6 +3,21 @@ package com.laojizhang.demo.learning
 class ListLearning {
     def lst = ["a", "b", "c", "d", "e", "f", "g"]
 
+    static void main(String[] args) {
+        PrintUtils.printCutLine("listLearning")
+        ListLearning learning = new ListLearning()
+        learning.printList()
+
+        PrintUtils.printCutLine()
+        learning.iteratorListWithIndex()
+
+        PrintUtils.printCutLine()
+        learning.findList()
+
+        PrintUtils.printCutLine()
+        learning.makeNewList()
+    }
+
     def printList() {
         //定义
         println lst
