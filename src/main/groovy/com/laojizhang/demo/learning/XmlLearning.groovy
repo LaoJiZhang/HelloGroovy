@@ -1,12 +1,5 @@
 package com.laojizhang.demo.learning
-/**
- * 文件名称： HelloGroovy
- * 作   者： GuoMaoJian
- * 创建日期： 2017/05/03-20:36
- * 文件描述：
- * <p>
- *
- */
+
 class XmlLearning {
 
     static void main(String[] args) {

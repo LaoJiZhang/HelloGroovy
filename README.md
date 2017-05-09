@@ -2,9 +2,10 @@
 ##Groovy入门级案例及简单说明
 
 * author: 老机长
+* quality pighead
 * time: 2017/04/27
-* update: 2017/05/07
-* version: 1.3.0
+* update: 2017/05/09
+* version: 1.4.0
 
 ## 什么是Groovy
 * Groovy是Java平台上设计的面向对象编程语言
@@ -33,9 +34,8 @@
 ###1.执行命令 
 >gradle init --type java-library
 
-<br/>
-在build.gradle文件中
-###2.添加 Groovy 插件 
+
+###2.在build.gradle文件中，添加 Groovy 插件 
 >apply plugin: 'groovy'
 
 ###3.在dependencies task内部添加依赖配置，如下
