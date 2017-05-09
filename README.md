@@ -84,11 +84,6 @@
 
 >参考 ：BaseLearning.groovy
 
-
-* Groovy遍历初探
-
->参考 EachLearning.groovy
-
 * Process 操作
 
 >参考 StringLearning.groovy.runCMD()
@@ -99,13 +94,13 @@
 
 >参考 StringLearning.groovy.checkNullString()
 
-* 灵活初始化
-
->参考 Demo.groovy.testClassLearning()
-
 * 多赋值()
 
 >参考 StringLearning.groovy.multiValue()
+
+* 灵活初始化
+
+>参考 ClassLearning.groovy
 
 * 布尔型求值
 
@@ -114,6 +109,10 @@
 >参考 ListLearning.groovy
 
 >参考 MapLearning.groovy
+
+>参考 EachLearning.groovy
+
+* Groovy快捷Api初探
 
 >参考 EachLearning.groovy
 
@@ -173,3 +172,4 @@ closure.call(params)
 * [新一代开源Android渠道包生成工具Walle](http://tech.meituan.com/android-apk-v2-signature-scheme.html)
 * [walle-cli](https://github.com/Meituan-Dianping/walle/blob/master/walle-cli/README.md)
 * [工匠若水 - Groovy脚本基础全攻略](http://blog.csdn.net/yanbober/article/details/49047515)
+* [简书地址](http://www.jianshu.com/p/0b19e064f9d6)
